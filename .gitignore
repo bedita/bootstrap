@@ -16,7 +16,7 @@
 /webroot/index.php
 
 # tmp
-#/tmp
+/tmp
 
 # /webroot/
 /webroot/test.php
