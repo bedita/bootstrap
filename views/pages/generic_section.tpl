@@ -8,7 +8,7 @@
 
 
     <div class="container">
-      {if empty($section.contentRequested) && !empty($section.childContents)}
+      {if empty($section.contentRequested)}
         <div class="row">
           {$view->element('list_contents')}
         </div>

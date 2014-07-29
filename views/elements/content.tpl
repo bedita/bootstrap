@@ -1,4 +1,5 @@
-        {$content = $section.currentContent|default:''}
+    {if !empty($section.currentContent)}
+        {$content = $section.currentContent}
         <h1>{$content.title|default:'[no title]'}</h1>
         {if !empty($section.contentRequested)}
         <p>{$content.body|default:''}<p>
@@ -7,3 +8,4 @@
         <a class="btn btn-primary btn-lg" href="{$html->url($content.canonicalPath)}" 
                 role="button">Learn more &raquo;</a>
         {/if}
+    {/if}
