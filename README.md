@@ -10,7 +10,7 @@ a. Clone boostrap frontend into frontends path, the __frontends__ folder inside 
 
 ```
       cd /var/www/bedita/frontends
-      git clone http://github.com/bedita/bootstrap.git
+      git clone https://github.com/bedita/bootstrap.git
 ```
 
 b. Copy *bootstrap/webroot/index.php.sample* to *bootstrap/webroot/index.php*.
