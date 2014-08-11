@@ -6,7 +6,7 @@ Bootstrap BEdita frontend from http://getbootstrap.com
 Setup
 =====
 
-a. Clone boostrap frontend into frontends path, the __frontends__ folder inside bedita root follder (like */var/www/bedita/frontends*), so:
+a. Clone boostrap frontend (or copy downloaded zip) into __frontends__ folder inside bedita root folder (like */var/www/bedita/frontends*), so:
 
 ```
       cd /var/www/bedita/frontends
