@@ -15,7 +15,7 @@
         <hr>
 
         <footer>
-          <p>&copy; Company 2014</p>
+          <p>&copy; Company {$smarty.now|date_format:"%Y"}</p>
         </footer>
       {/if}
     </div> <!-- /container -->
