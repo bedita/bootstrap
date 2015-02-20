@@ -1,5 +1,5 @@
 {if !empty($mailgroups)}
-	<form action="{$html->url('/hashjob/newsletter_subscribe')}" method="post">
+	<form action="{$beHtml->url('/hashjob/newsletter_subscribe')}" method="post">
 		Email: <input type="text" name="data[newsletter_email]" size="30"/>
 		<br/>Newsletter(s):
 		{foreach from=$mailgroups item='i' name='g'}

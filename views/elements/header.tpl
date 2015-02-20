@@ -9,7 +9,7 @@
           </button>
          {if !empty($sectionsTree)}
             {foreach $sectionsTree as $item}
-                <a class="navbar-brand" href="{$html->url($item.canonicalPath)}">
+                <a class="navbar-brand" href="{$beHtml->url($item.canonicalPath)}">
                     {$item.title|truncate:20|default:"<i>[no title]</i>"}
                 </a>
             {/foreach}
@@ -19,7 +19,7 @@
         {if !empty($BEAuthUser)}
           <div class="navbar-right">
              <span class="navbar-brand">Hi, {$BEAuthUser.realname}</span>
-             <a class="navbar-brand" href="{$html->url('/logout')}">[Logout]</a>
+             <a class="navbar-brand" href="{$beHtml->url('/logout')}">[Logout]</a>
           </div>
         {else}
           <form class="navbar-form navbar-right" role="form" action="{$html->here}" method="post">

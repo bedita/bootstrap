@@ -3,7 +3,7 @@
 {if !empty($tag.items)}
 	<ul>
 	{foreach from=$tag.items item="object"}
-		<li><a href="{$html->url('/')}{$object.nickname}">{$object.title}</a></li>
+		<li><a href="{$beHtml->url('/')}{$object.nickname}">{$object.title}</a></li>
 	{/foreach}
 	</ul>
 {/if}	

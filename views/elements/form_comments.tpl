@@ -5,7 +5,7 @@
 	
 	<h3>{t}Write a comment{/t}</h3>
 	
-	<form action="{$html->url('/saveComment')}" method="post">
+	<form action="{$beHtml->url('/saveComment')}" method="post">
 		<input type="hidden" name="data[object_id]" value="{$section.currentContent.id}" />
 	<fieldset>
 	{assign var="userLogged" value=$session->read($conf->session.sessionUserKey)}
@@ -26,7 +26,7 @@
 		<textarea rows="10" cols="50" name="data[description]"></textarea><br/><br/>
 	
 	{if empty($userLogged)}
-		<img src="{$html->url('/captchaImage')}" style="margin-right: 8px;" /><br/>
+		<img src="{$beHtml->url('/captchaImage')}" style="margin-right: 8px;" /><br/>
 		<label>{t}Write the text you see in the image above{/t}</label><br/>
 		<input type="text" name="captcha" id="captcha" style="width: 240px; margin: 6px 0;"  /> 
 	{/if}
