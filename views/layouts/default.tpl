@@ -8,6 +8,11 @@
 	{$beFront->metaAll()}
 	{$beFront->metaDc()}
 	{$beFront->metaOg()}
+	
+    {if $conf->version >= '3.5.2'}
+        {$beFront->metaWebApp($publication.title, ['default' => 'apple-touch-icon.png'], '#000')}
+    {/if}
+
     <link rel="icon" href="{$html->webroot}favicon.ico">
 
     <title>{$beFront->title()}</title>
