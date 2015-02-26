@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html lang="{$currLang2}">
 <head>
-	{$html->charset()}
+    {$html->charset()}
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-	{$beFront->metaAll()}
-	{$beFront->metaDc()}
-	{$beFront->metaOg()}
-	
+    {$beFront->metaAll()}
+    {$beFront->metaDc()}
+    {$beFront->metaOg()}
+    
     {if $conf->version >= '3.5.2'}
         {$beFront->metaWebApp($publication.title, ['default' => 'apple-touch-icon.png'], '#000')}
     {/if}
@@ -42,13 +42,13 @@
   </head>
 
 <body>
-	{$view->element('header')}
+    {$view->element('header')}
 
-	{$content_for_layout}
+    {$content_for_layout}
 
-	{$view->element('footer')}
+    {$view->element('footer')}
 
-	{$beFront->stats()}
+    {$beFront->stats()}
 
     <!-- Bootstrap core JavaScript
     ================================================== -->
