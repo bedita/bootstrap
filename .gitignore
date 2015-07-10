@@ -9,18 +9,17 @@
 /.tmp
 
 # config
+/config/paths.php
 /config/core.php
 /config/frontend.cfg.php
 
 # webroot
-/webroot/index.php
 
 # tmp
 /tmp
 
 # /webroot/
 /webroot/test.php
-/webroot/index.php
 /webroot/files
 
 # /webroot/img/
